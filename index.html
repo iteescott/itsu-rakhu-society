@@ -1,82 +1,197 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#27385F" />
   <title>The Itsu × Rakhu Society</title>
-  <meta name="description" content="A private archive of Itsu × Rakhu. 16.04.2022 — Forever.">
+  <meta name="description" content="A private archive of memories, correspondence, adventures and other matters of great importance." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Italianno&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Italianno&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <main class="landing">
-    <div class="grain"></div>
-    <div class="glow glow-one"></div>
-    <div class="glow glow-two"></div>
+  <div class="grain"></div>
+  <header class="topbar">
+    <a class="monogram" href="#top" aria-label="Back to top">I × R</a>
+    <button class="menu-button" id="menuButton" aria-label="Open archive index">INDEX</button>
+  </header>
 
-    <header class="topline">
-      <span>PRIVATE ARCHIVE</span>
-      <span>EST. 16.04.2022</span>
-    </header>
+  <aside class="index-drawer" id="indexDrawer" aria-hidden="true">
+    <div class="drawer-inner">
+      <button class="drawer-close" id="drawerClose">CLOSE ×</button>
+      <p class="eyebrow archive-yellow">PRIVATE ARCHIVE</p>
+      <h2>Society Index</h2>
+      <nav>
+        <a href="#good-stuff">01 — The Good Stuff</a>
+        <a href="#open-when">02 — Open When</a>
+        <a href="#wish">03 — I Wish You Were Here</a>
+        <a href="#people">04 — From The People Who Love You</a>
+        <a href="#quiz">05 — How Well Do We Know Us?</a>
+        <a href="#arcade">06 — The Long-Distance Arcade</a>
+        <a href="#dates">07 — The Date Generator</a>
+        <a href="#vault">08 — The Vault</a>
+      </nav>
+    </div>
+  </aside>
 
-    <section class="hero">
+  <main id="top">
+    <section class="hero section-navy">
       <div class="hero-copy">
-        <p class="eyebrow">A PRIVATE SOCIETY</p>
-        <h1>
-          <span class="small-title">THE</span>
-          <span class="script">Itsu × Rakhu</span>
-          <span class="large-title">SOCIETY</span>
-        </h1>
-
-        <div class="rule"></div>
-
-        <p class="intro">
-          A private collection of memories,<br>
-          correspondence, adventures<br>
-          &amp; other matters of great importance.
-        </p>
-
-        <div class="founders">
-          <span>FOUNDED BY</span>
-          <strong>ITSU &amp; RAKHU</strong>
+        <p class="kicker">THE ITSU × RAKHU SOCIETY</p>
+        <p class="byline">A SURVIVAL KIT FOR LOVING EACH OTHER FROM SEPARATE JURISDICTIONS</p>
+        <div class="hero-title-wrap">
+          <h1>THE<br><span>Society</span></h1>
+          <div class="seal" aria-hidden="true"><span>IR</span><small>EST.<br>16.04.2022</small></div>
         </div>
-
-        <button class="enter" id="enterButton">
-          <span>OPEN THE ARCHIVE</span>
-          <span class="arrow">↗</span>
-        </button>
+        <p class="hero-intro">A private collection of memories, correspondence, adventures & other matters of great importance.</p>
+        <div class="hero-meta"><span>FOUNDED BY ITSU & RAKHU</span><span>16.04.2022 — FOREVER</span></div>
+        <a class="button button-light" href="#good-stuff">ENTER THE ARCHIVE <span>↓</span></a>
       </div>
-
-      <div class="photo-wrap">
-        <div class="stamp">I × R<br><small>ARCHIVE</small></div>
-        <figure class="polaroid">
-          <img src="assets/hero-polaroid.jpg" alt="Itsu and Rakhu">
-          <figcaption>Archive No. 001 · The Founders</figcaption>
-        </figure>
-        <span class="date-mark">16.04.22</span>
+      <div class="hero-polaroid">
+        <div class="polaroid-frame">
+          <img src="./assets/hero-polaroid.jpg" alt="A Polaroid photograph from the Society archive">
+          <p>PROPERTY OF THE SOCIETY · ARCHIVE 001</p>
+        </div>
       </div>
     </section>
 
-    <footer class="footer">
-      <span>ITSU × RAKHU</span>
-      <span>16.04.2022 — FOREVER</span>
-      <span>MEMBERS ONLY</span>
-    </footer>
+    <section id="good-stuff" class="section section-ivory scrapbook">
+      <div class="section-heading dark-text">
+        <p class="eyebrow">SELECTED MATERIALS FROM THE SOCIETY ARCHIVES</p>
+        <h2>The Good <em>Stuff</em></h2>
+        <p class="section-lede">Evidence that we have, in fact, had a very good time.</p>
+      </div>
+      <div class="memory-grid">
+        <article class="memory-card card-1"><div class="photo-placeholder"><span>PHOTO 02</span><small>Add image to assets/photos/</small></div><p>THE BEGINNING OF SOMETHING VERY GOOD</p></article>
+        <article class="memory-card card-2"><div class="photo-placeholder"><span>PHOTO 03</span><small>Add image to assets/photos/</small></div><p>AN UNREASONABLE NUMBER OF INSIDE JOKES</p></article>
+        <article class="memory-card card-3"><div class="photo-placeholder"><span>PHOTO 04</span><small>Add image to assets/photos/</small></div><p>THE SORT OF DAY WE WISH WE COULD REPEAT</p></article>
+        <article class="archive-note"><span>FILE NO. 04</span><strong>KEEP THIS ONE.</strong><p>Some memories deserve to be filed under “never getting over this.”</p></article>
+      </div>
+      <p class="scroll-note">More evidence to be added before publication.</p>
+    </section>
+
+    <section id="open-when" class="section section-burgundy correspondence">
+      <div class="section-heading light-text centered">
+        <p class="eyebrow">PRIVATE CORRESPONDENCE</p>
+        <h2>Open <em>When</em></h2>
+        <p class="section-lede">For circumstances requiring immediate access to a familiar voice.</p>
+      </div>
+      <div class="envelope-grid">
+        <button class="envelope" data-video="" data-title="Open when you miss me">
+          <span class="wax">IR</span><b>OPEN WHEN</b><strong>you miss me</strong><small>Correspondence No. 01</small>
+        </button>
+        <button class="envelope" data-video="" data-title="Open when you have had a bad day">
+          <span class="wax">IR</span><b>OPEN WHEN</b><strong>you've had a bad day</strong><small>Correspondence No. 02</small>
+        </button>
+        <button class="envelope" data-video="" data-title="Open when you need a reminder">
+          <span class="wax">IR</span><b>OPEN WHEN</b><strong>you need a reminder</strong><small>Correspondence No. 03</small>
+        </button>
+        <button class="envelope" data-video="" data-title="Open when Estonia feels too far away">
+          <span class="wax">IR</span><b>OPEN WHEN</b><strong>Estonia feels too far away</strong><small>Correspondence No. 04</small>
+        </button>
+      </div>
+      <p class="microcopy">Click an envelope once its video URL has been added in <code>script.js</code>.</p>
+    </section>
+
+    <section id="wish" class="section section-olive wish-section">
+      <div class="wish-orbit">I × R</div>
+      <div class="section-heading light-text centered">
+        <p class="eyebrow">A SMALL MATTER OF DISTANCE</p>
+        <h2>I Wish You Were <em>Here.</em></h2>
+        <p class="section-lede">A scientifically rigorous button for when “I miss you” isn't quite enough.</p>
+      </div>
+      <button class="wish-button" id="wishButton">I WISH YOU WERE HERE</button>
+      <div class="wish-response" id="wishResponse">Press the button. We have prepared several official responses.</div>
+    </section>
+
+    <section id="people" class="section section-navy people-section">
+      <div class="section-heading light-text">
+        <p class="eyebrow">TESTIMONIALS FROM DISTINGUISHED MEMBERS OF THE EXTENDED SOCIETY</p>
+        <h2>From the People<br>Who <em>Love You</em></h2>
+        <p class="section-lede">A few people who have been briefed on the situation and have agreed that you are, unfortunately, very loved.</p>
+      </div>
+      <div class="testimonial-row">
+        <article class="testimonial"><div class="video-placeholder"><span>VIDEO 01</span><small>Add video URL in script.js</small></div><p>“A message from someone who will miss you.”</p></article>
+        <article class="testimonial featured"><div class="video-placeholder"><span>VIDEO 02</span><small>Add video URL in script.js</small></div><p>“A message from someone who knows you very well.”</p></article>
+        <article class="testimonial"><div class="video-placeholder"><span>VIDEO 03</span><small>Add video URL in script.js</small></div><p>“A message from someone who has excellent things to say.”</p></article>
+      </div>
+    </section>
+
+    <section id="quiz" class="section section-ivory quiz-section">
+      <div class="section-heading dark-text centered">
+        <p class="eyebrow">MEMBERSHIP EXAMINATION</p>
+        <h2>How Well Do We Know <em>Us?</em></h2>
+        <p class="section-lede">There will be no appeals process. Choose carefully.</p>
+      </div>
+      <div class="quiz-card" id="quizCard">
+        <div class="quiz-progress"><span id="quizProgress">QUESTION 01 / 05</span><span id="quizScore">SCORE 00</span></div>
+        <h3 id="quizQuestion">Loading examination…</h3>
+        <div class="quiz-options" id="quizOptions"></div>
+        <button class="button button-dark hidden" id="quizRestart">RETAKE EXAMINATION</button>
+      </div>
+    </section>
+
+    <section id="arcade" class="section section-burgundy arcade-section">
+      <div class="section-heading light-text">
+        <p class="eyebrow">APPROVED RECREATIONAL ACTIVITIES FOR MEMBERS OPERATING FROM SEPARATE JURISDICTIONS</p>
+        <h2>The Long-Distance <em>Arcade</em></h2>
+        <p class="section-lede">Games, tiny competitions and other approved methods of refusing to behave like normal adults.</p>
+      </div>
+      <div class="arcade-toolbar"><span id="arcadeCount">03 APPROVED GAMES</span><button class="text-button" id="addGameButton">+ ADD TO ARCADE</button></div>
+      <div class="game-grid" id="gameGrid"></div>
+    </section>
+
+    <section id="dates" class="section section-olive dates-section">
+      <div class="date-card">
+        <p class="eyebrow">THE SOCIETY'S OFFICIAL SOCIAL CALENDAR</p>
+        <h2>What shall we <em>do?</em></h2>
+        <p>When indecision strikes, consult the official calendar.</p>
+        <button class="button button-light" id="dateButton">GENERATE A DATE</button>
+        <div class="date-result" id="dateResult">Your next excellent idea will appear here.</div>
+      </div>
+      <div class="date-list">
+        <span>01 — WATCH SOMETHING AT THE SAME TIME</span>
+        <span>02 — COOK THE SAME MEAL</span>
+        <span>03 — DRESS UP FOR A VIDEO CALL</span>
+        <span>04 — TAKE EACH OTHER ON A WALK</span>
+        <span>05 — PLAY A TERRIBLE GAME TOGETHER</span>
+        <span>06 — ORDER EACH OTHER'S FAVOURITE FOOD</span>
+      </div>
+    </section>
+
+    <section id="vault" class="section section-navy vault-section">
+      <div class="section-heading light-text centered">
+        <p class="eyebrow">RESTRICTED MATERIALS · OPENING DATES APPLY</p>
+        <h2>The <em>Vault</em></h2>
+        <p class="section-lede">Certain things are better delivered at precisely the right time.</p>
+      </div>
+      <div class="vault-grid">
+        <article class="vault-card" data-month="1" data-day="1"><span>01</span><h3>NEW YEAR'S EVE</h3><p class="vault-status">LOCKED</p><button class="vault-open">CHECK DATE</button></article>
+        <article class="vault-card" data-month="10" data-day="20"><span>02</span><h3>DIWALI</h3><p class="vault-status">LOCKED</p><button class="vault-open">CHECK DATE</button></article>
+        <article class="vault-card" data-month="12" data-day="25"><span>03</span><h3>CHRISTMAS</h3><p class="vault-status">LOCKED</p><button class="vault-open">CHECK DATE</button></article>
+        <article class="vault-card" data-month="4" data-day="16"><span>04</span><h3>16 APRIL</h3><p class="vault-status">LOCKED</p><button class="vault-open">CHECK DATE</button></article>
+      </div>
+      <p class="microcopy">Vault dates are editable in <code>index.html</code> once your exact dates are confirmed.</p>
+    </section>
+
+    <section class="ending section-burgundy">
+      <div class="ending-mark">I × R</div>
+      <p class="eyebrow">FINAL NOTICE FROM THE SOCIETY</p>
+      <h2>This is not the end.<br>It is another <em>adventure.</em></h2>
+      <p class="ending-copy">In five years — maybe less — we'll look back at this version of us and laugh at how nervous we were about a little distance.</p>
+      <p class="forever">MEMBERSHIP: PERMANENT<br>ARCHIVE: ALWAYS OPEN</p>
+      <p class="signature">Love,<br><span>Itsu</span></p>
+      <div class="footer-line"><span>THE ITSU × RAKHU SOCIETY</span><span class="archive-yellow">EST. 16.04.2022</span><span>FOREVER</span></div>
+    </section>
   </main>
 
-  <section class="archive-preview" id="archive">
-    <div class="archive-inner">
-      <p class="eyebrow">THE ARCHIVES</p>
-      <h2>The Good Stuff</h2>
-      <p class="archive-note">Selected materials from the Society archives.</p>
-      <div class="archive-line"></div>
-      <p class="coming">The rest of the Society is being carefully assembled.</p>
-      <p class="signature">I × R</p>
-    </div>
-  </section>
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-box"><button class="modal-close" data-close-modal>×</button><p class="eyebrow" id="modalEyebrow">PRIVATE CORRESPONDENCE</p><h3 id="modalTitle"></h3><div class="modal-media" id="modalMedia"></div><p class="modal-note" id="modalNote"></p></div>
+  </div>
 
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
